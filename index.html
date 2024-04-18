@@ -20,18 +20,18 @@
 
 <body>
     
-    <nav class="navbar navbar-expand-sm fixed-top">
+    <nav class="navbar navbar-expand-sm fixed-top main-top">
 
         <div class="container-fluid row">
 
-            <img src="assets/img/viajes.svg" alt="">
-            <span>Viajes Chile</span>
+            <embed type="image/svg+xml" src="assets/img/viajes.svg" class="logo">
+            <span class="text-white">Viajes Chile</span>
 
             <button class="navbar-toggler col-sm" type="button" data-bs-toggle="collapse" data-bs-target="navbarViajesChile">
                 <i class="fas fa-bars text-white"></i>
             </button>
 
-            <div id="navbarViajesChile" class="collapse navbar-collapse col-sm-3 ml-auto">
+            <div id="navbarViajesChile" class="collapse navbar-collapse col-sm-4 ml-auto">
                 
                 <ul class="navbar-nav">
                     <li class="nav-item"> <a href="#" class="nav-link text-light">Inicio</a></li>
@@ -46,50 +46,44 @@
 
     </nav>
 
-    <section>
+    <header id="inicio">
 
-        <div id="carousel" class="carousel slide d-none d-md-block" data-ride="carousel">
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
 
             <div class="carousel-inner">
 
                 <div class="carousel-item active">
 
-                    <div class="row">
-                        <div class="col-md-3"><img src="assets/img/carousel1.jpg" class="d-block w-100" alt="Imagen 1"></div>
-                    </div>
+                    <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="Imagen 1">
 
                 </div>
 
                 <div class="carousel-item">
 
-                    <div class="row">
-                        <div class="col-md-3"><img src="assets/img/carousel2.jpg" class="d-block w-100" alt="Imagen 5"></div>
-                    </div>
+                    <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="Imagen 2">
 
                 </div>
 
                 <div class="carousel-item">
 
-                    <div class="row">
-                        <div class="col-md-3"><img src="assets/img/carousel3.jpg" class="d-block w-100" alt="Imagen 5"></div>
-                    </div>
+                    <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="Imagen 3">
 
                 </div>
 
             </div>
     
-            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#carousel" role="button" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Anterior</span>
             </a>
-            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#carousel" role="button" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Siguiente</span>
             </a>
     
         </div>
 
-    </section>
+    </header>
 
     <section id="quienes-somos">
 
@@ -99,7 +93,7 @@
 
             <div class="col-12 col-lg-4 px-3">
 
-                <i class="fa-solid fa-plane"></i>
+                <i class="fa-solid fa-plane icons"></i>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora quis accusamus, esse sint dolorem quos, sunt sequi excepturi eum, atque quam aliquid fugit nam facere ratione adipisci! Perspiciatis, similique dolore!</p>
 
             </div>
@@ -107,13 +101,13 @@
             <div class="col-12 col-lg-4 px-3">
 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea excepturi laudantium quo. Quae obcaecati dolorem commodi veritatis facere quos sit libero eum perferendis, esse eos maxime cumque laudantium reiciendis unde iure sapiente doloremque, ea vitae.</p>
-                <i class="fa-solid fa-mountain"></i>
+                <i class="fa-solid fa-mountain icons"></i>
 
             </div>
 
             <div class="col-12 col-lg-4 px-3">
 
-                <i class="fa-solid fa-route"></i>
+                <i class="fa-solid fa-route icons"></i>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, quia quisquam! Architecto, tenetur earum! Eaque veritatis, itaque voluptatum atque sit illum adipisci repellendus, officia pariatur, laborum molestias placeat laudantium et incidunt exercitationem est.</p>
 
             </div>
@@ -227,24 +221,33 @@
 
     </section>
 
+    <footer class="container-fluid text-center text-white bg-info py-4"> 
+        <div class="row align-items-center"> 
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"> 
+                <h3 class="text-uppercase mb-0">Viajes Chile</h3> 
+            </div> 
+
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 my-2"> 
+                <i class="fab fa-github-square fa-2x mx-2" data-bs-toggle="tooltip" data-placement="top" title="GitHub"></i> 
+                <i class="fab fa-linkedin fa-2x mx-2" data-bs-toggle="tooltip" data-placement="right" title="LinkedIn"></i> 
+                <i class="fab fa-twitter-square fa-2x mx-2" data-bs-toggle="tooltip" data-placement="bottom" title="Twitter"></i> 
+                <i class="fab fa-facebook-square fa-2x mx-2" data-bs-toggle="tooltip" data-placement="left" title="Facebook"></i> 
+            </div> 
+        </div> 
+    </footer>
+
     <script src="assets/js/script.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <script src="https://kit.fontawesome.com/c5db1893ae.js" crossorigin="anonymous"></script>
 
+    <script> 
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]')) 
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) { 
+            return new bootstrap.Tooltip(tooltipTriggerEl)}) 
+        </script>
+
 </body>
-
-    <footer class="py-3">
-        <p class="text-right">VIAJES CHILE</p>
-
-        <div class="container">
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-square-facebook"></i>
-        </div>
-
-    </footer>
 
 </html>
