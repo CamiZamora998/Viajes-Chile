@@ -22,13 +22,23 @@ header {
     color: #fff;
 }
 
+.card-2 {
+    height: 300px;
+    width: 350px;
+}
+
+.icons {
+    background-color: #00AAE4;
+    width: 350px;
+}
+
 /* cambia fondo de la sección y color de fuente */
 #Destacados {
     background-color: black;
     color: #fff;
 }
 
-/* cambia fondo de la sección, color de fuente y su altura */
+/* cambia fondo de la sección, color de fuente y altura */
 .card-body {
     background-color: #00AAE4;
     color: #000;

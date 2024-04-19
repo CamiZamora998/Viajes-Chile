@@ -34,10 +34,10 @@
             <div id="navbarViajesChile" class="collapse navbar-collapse col-sm-4 ml-auto">
                 
                 <ul class="navbar-nav">
-                    <li class="nav-item"> <a href="#" class="nav-link text-light">Inicio</a></li>
-                    <li class="nav-item"> <a href="#" class="nav-link text-light">Quiénes Somos</a></li>
-                    <li class="nav-item"> <a href="#" class="nav-link text-light">Destacados</a></li>
-                    <li class="nav-item"> <a href="#" class="nav-link text-light">Contacto</a></li>
+                    <li class="nav-item"> <a href="#inicio" class="nav-link text-light">Inicio</a></li>
+                    <li class="nav-item"> <a href="#quienes-somos" class="nav-link text-light">Quiénes Somos</a></li>
+                    <li class="nav-item"> <a href="#Destacados" class="nav-link text-light">Destacados</a></li>
+                    <li class="nav-item"> <a href="#contacto" class="nav-link text-light">Contacto</a></li>
                 </ul>
 
             </div>
@@ -85,7 +85,7 @@
 
     </header>
 
-    <div id="quienes-somos" class="py-5 bg-black">
+    <div id="quienes-somos" class="py-5 bg-black card-container-2">
 
         <div class="mx-5">
 
@@ -94,24 +94,36 @@
 
             <div class="row">
 
-                <div class="col-12 col-lg-4 px-3">
+                <div class="col-12 col-lg-4 px-3 text-center">
 
-                    <i class="fa-solid fa-plane icons"></i>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora quis accusamus, esse sint dolorem quos, sunt sequi excepturi eum, atque quam aliquid fugit nam facere ratione adipisci! Perspiciatis, similique dolore!</p>
+                    <div class="card-2">
 
-                </div>
+                        <i class="fa-solid fa-plane icons fa-2x"></i>
+                        <p class="text-left">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores nostrum iste aperiam tempora quod quis laboriosam eaque delectus ipsum odit sed nesciunt sit unde temporibus, architecto quaerat necessitatibus recusandae id quisquam nam dicta minus? Ab doloribus, ut nostrum accusamus nemo, illo sunt labore dolore molestias porro voluptas? Quos odit reprehenderit beatae iste corporis necessitatibus. Officiis molestiae natus numquam dolorum, veritatis aperiam, dicta possimus, repellendus laudantium minus consequatur unde iure assumenda!</p>
 
-                <div class="col-12 col-lg-4 px-3">
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea excepturi laudantium quo. Quae obcaecati dolorem commodi veritatis facere quos sit libero eum perferendis, esse eos maxime cumque laudantium reiciendis unde iure sapiente doloremque, ea vitae.</p>
-                    <i class="fa-solid fa-mountain icons"></i>
+                    </div>
 
                 </div>
 
-                <div class="col-12 col-lg-4 px-3">
+                <div class="col-12 col-lg-4 px-3 text-center">
 
-                    <i class="fa-solid fa-route icons"></i>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, quia quisquam! Architecto, tenetur earum! Eaque veritatis, itaque voluptatum atque sit illum adipisci repellendus, officia pariatur, laborum molestias placeat laudantium et incidunt exercitationem est.</p>
+                    <div class="card-2">
+
+                        <p class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, perspiciatis! Labore adipisci nulla totam beatae! Deleniti, quaerat. Unde esse distinctio autem vel, quo a fugiat maxime tempora et, quos nihil quae. Iusto excepturi repudiandae, reprehenderit reiciendis sunt assumenda minus rem labore, enim quos cupiditate error aut a deserunt fugiat voluptas beatae deleniti similique libero hic veniam voluptatibus. Non earum cupiditate praesentium rerum, dignissimos at commodi iusto enim architecto quos expedita.</p>
+                        <i class="fa-solid fa-mountain icons fa-2x"></i>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-lg-4 px-3 text-center">
+
+                    <div class="card-2">
+
+                        <i class="fa-solid fa-route icons fa-2x"></i>
+                        <p class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio obcaecati saepe ratione. Exercitationem odit recusandae eius nobis dolor, ea minima nostrum rerum, natus doloribus numquam dolorum consequuntur saepe quidem minus dolore architecto dicta quam voluptate excepturi inventore ipsum quo vitae? Dolor ullam tempora expedita quo quibusdam, aliquam, ipsa minus sit vitae perspiciatis molestiae! Earum voluptates autem nihil fugiat ab atque, doloribus, accusantium assumenda ea maxime eveniet velit! Modi, nisi quam.</p>
+
+                    </div>
 
                 </div>
 
@@ -224,11 +236,11 @@
         
                     <div class="mb-3">
                         <label class="form-label" >Mensaje</label>
-                        <input type="text" placeholder="Mensaje" class="form-control" aria-describedby="emailHelp">
+                        <input type="text" placeholder="Mensaje" class="form-control" style="height: 150px;" aria-describedby="emailHelp">
                     </div>
         
                     <div class="form-group">
-                        <button class="btn btn-info text-light send">Enviar</button>
+                        <button type="button" class="btn btn-info text-light send" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Presiona para enviar a tu correo" id="enviarCorreo">Enviar</button>
                     </div>
             
                 </form>
@@ -252,6 +264,7 @@
         </div> 
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"> </script> 
     <script src="assets/js/script.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -262,7 +275,24 @@
         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]')) 
         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) { 
             return new bootstrap.Tooltip(tooltipTriggerEl)}) 
-        </script>
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            
+            $("a").on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                                    scrollTop: $(hash).offset().top
+                                    }, 1000, function(){
+                                    window.location.hash = hash;
+                                    });
+    }
+    });
+    });
+    </script>
 
 </body>
 
