@@ -1,18 +1,52 @@
+/* Establece fondo de barra superior y separación de los elemtos */
 .navbar {
     background-color: #00AAE4;
     padding-left: 10%;
     padding-right: 10%;
 }
 
+/* Cambia el tamaño de la imagen .svg*/
 .logo {
     width: 50px;     
     height: 50px; 
 }
 
+/*distancia del header del navbar*/
 header {
     margin-top: 4%;
 }
 
+/* cambia fondo de la sección y color de fuente */
+#quienes-somos {
+    background-color: black;
+    color: #fff;
+}
+
+/* cambia fondo de la sección y color de fuente */
+#Destacados {
+    background-color: black;
+    color: #fff;
+}
+
+/* cambia fondo de la sección, color de fuente y su altura */
+.card-body {
+    background-color: #00AAE4;
+    color: #000;
+    height: 300px;
+}
+
+/* cambia la altura de la imagen */
+.imgcard {
+    height: 250px;
+}
+
+/* cambia fondo de la sección y color de fuente */
+#contacto {
+    background-color: black;
+    color: #fff;
+}
+
+/*Establece distancia de los elementos con el margen y fuente del texto*/
 body {
     margin: 10px;
     padding: 0px;
@@ -20,10 +54,10 @@ body {
 }
 
 
-
+/*Establece color de fondo del footer y distancia de los elementos con el borde*/
 footer {
     background-color: #00AAE4;
     padding-left: 10%;
     padding-right: 10%;
-    font-family: "Poopins";
+    margin: 0;
 }
