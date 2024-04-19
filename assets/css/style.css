@@ -22,11 +22,13 @@ header {
     color: #fff;
 }
 
+/* Encuadrado de texto*/
 .card-2 {
     height: 300px;
     width: 350px;
 }
 
+/* Cambio de color del fondo y ancho del mismo*/
 .icons {
     background-color: #00AAE4;
     width: 350px;
@@ -69,5 +71,6 @@ footer {
     background-color: #00AAE4;
     padding-left: 10%;
     padding-right: 10%;
-    margin: 0;
+    margin-bottom: 0;
+    padding-bottom: 0%;
 }
